@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            height: 100vh;
+            width: 100vw;
+            background-color: rgb(234, 234, 234);
+        }
+
+        .card{
+            width: 40%;
+            background-color: white;
+            padding: 1%;
+            margin: 2% auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        h1{
+            text-align: center;
+            color: rgb(61, 61, 224);
+            margin-bottom: 15px;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"], 
+        select{
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid gray;
+        }
+
+        label{
+            font-size: 20px;
+        }
+
+        button{
+            min-width: 120px;
+            max-width: 20%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            background-color: rgb(57, 97, 228);
+            color: white;
+            font-size: 20px;
+            margin-left: 40%;
+            margin-bottom: 4%;
+        }
+
+        button:hover{
+            opacity: 0.9;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Survey Form</h1>
+        <form action="">
+            <input type="text" placeholder="Enter your name">
+            <input type="email" placeholder="Enter your email">
+            <input type="number" placeholder="Enter your age">
+            <select name="" id="">
+                <option value="student">Student</option>
+                <option value="professional">Professional</option>
+                <option value="other">Other</option>
+            </select>
+            <label for="">Would you recommend this survey form to a friend?</label>
+            <div>
+                <input type="radio" name="recommend" id="yes" value="yes">
+                <label for="">Yes</label><br><br>
+
+                <input type="radio" name="recommend" id="no" value="no">
+                <label for="">No</label><br><br>
+
+                <input type="radio" name="recommend" id="maybe" value="maybe">
+                <label for="">Maybe</label><br><br>
+            </div>
+
+            <label for="">Languages and Frameworks known (Check all that apply)</label>
+            <div>
+                <input type="checkbox" name="recommend" value="java">
+                <label for="">Java</label><br><br>
+
+                <input type="checkbox" name="recommend" value="python">
+                <label for="">Python</label><br><br>
+
+                <input type="checkbox" name="recommend" value="react">
+                <label for="">React</label><br><br>
+
+                <input type="checkbox" name="recommend" value="angular">
+                <label for="">Angular</label><br><br>
+
+                <input type="checkbox" name="recommend" value="spring">
+                <label for="">Spring</label><br><br>
+            </div>
+
+            <label for="">Any comments or suggestions</label>
+            <textarea name="" id="" rows="5" cols="10"></textarea>
+
+            <button>Sign Up</button>
+        </form>
+    </div>
+</body>
+</html>
