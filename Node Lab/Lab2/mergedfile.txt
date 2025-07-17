@@ -1,0 +1,6 @@
+My name is Vishal.
+I love learning Node.js.
+This is the first file.
+Welcome to the second file.
+Node.js makes file handling easy.
+Practice makes perfect!
